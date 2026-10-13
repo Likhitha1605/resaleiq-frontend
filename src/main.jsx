@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { Home, Tag, Scale, Bookmark, ChartNoAxesColumnIncreasing, UserRound, CarFront, Bike, Smartphone, ArrowRight, CheckCircle2, Search, RotateCcw, LoaderCircle, AlertCircle, Moon, Sun, Info, Sparkles, Trash2, ChevronRight, ShieldCheck, TrendingUp } from 'lucide-react';
 import './styles.css';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000/predict';
+const API_URL = import.meta.env.VITE_API_URL || 'https://resaleiq-backend.onrender.com/predict';
 const money = n => '₹' + Math.round(Number(n) || 0).toLocaleString('en-IN');
 const categories = {
   Cars: {icon:CarFront, hint:'Hatchback, Sedan, SUV', fields:[
